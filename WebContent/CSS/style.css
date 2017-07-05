@@ -1,0 +1,347 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	margin:5em;
+}
+
+p:hover{background-color:red;
+-moz-transition-property:background-color;
+-moz-transition-duration:3s;
+-webkit-transition-property:background-color;
+-webkit-transition-duration:3s;
+
+-o-transition-property:background-color;
+-o-transition-duration:3s;
+
+transition-property:background-color;
+transition-duration:3s;
+}
+
+
+
+
+p[id='cielo']:hover{background-color:#bbaaaa;
+	
+}
+
+
+
+figcaption{
+	display:block;
+}
+  #pi{
+	border:thin dotted black;
+	padding :3px;
+	width:300px;
+	-ms-transform:skew(10deg,20deg);
+	-moz-tranform:skew(10deg,20deg);
+	-webkit-transform:skew(10deg,20deg);
+	-o-transform:skew(10deg,20deg);
+	transform:skew(10deg,20deg);
+}
+
+div[id='myne']{
+	border:thin dotted black;
+	padding :3px;
+	width:300px;
+	-ms-transform:skew(10deg,20deg);
+	-moz-tranform:skew(10deg,20deg);
+	-webkit-transform:skew(10deg,20deg);
+	-o-transform:skew(10deg,20deg);
+	transform:skew(20deg,20deg);
+}
+div[id='twice']{
+	border:thin dotted black;
+	padding :3px;
+	width:300px;
+	-ms-transform:skew(10deg,20deg);
+	-moz-tranform:skew(10deg,20deg);
+	-webkit-transform:skew(10deg,20deg);
+	-o-transform:skew(10deg,20deg);
+	transform:skew(-10deg,-10deg);
+}
+
+
+
+div[id='three']{
+	poition:absolute;
+	top:50px;
+	left:30px;
+	width:390px;
+	
+	border:thin dotted black;
+	padding :3px;
+	width:300px;
+	
+}
+
+
+
+#animatez {
+	margin:50px;
+	padding :1em;
+	width:400px;
+	heigth:300px;
+	border:thin dotted black;
+	
+	position:absolute;
+	-webkit-animation:animate 5s 1s 3 linear alternate,slittamento 10s 1s 3 linear normal;
+	-o-animation:animate 5s 1s 3 linear alternate, slittamento 10s 1s 3 linear normal;
+	-moz-animation:animate 5s 1s 3 linear alternate,slittamento 10s 1s 3 linear normal;
+	animation:animate 5s 1s 10 linear alternate,slittamento 10s 1s 3 linear normal ;
+	
+}
+	
+	
+#double{
+	width:400px;
+	height:300px;
+	
+	border:1px solid;
+	background: url("../Picture/Gates.jpg") top right no-repeat ,
+		url("../Picture/Debian.jpg") top left no-repeat;
+		
+		background-size:200px 300px,contain;
+	
+}
+	
+
+
+	
+#test2{
+	-ms-transform:translate(300px,200px);
+	-moz-tranform:translate(300px,200px);
+	-webkit-transform:translate(300px,200px);
+	-o-transform:translate(300px,200px);
+	transform:translate(100px,200px);
+	
+	}
+	
+	
+	@keyframes animate
+	{
+	from{
+	color:pink;
+		}
+		
+		
+		25%{
+		color:blue;
+		
+		}
+		
+		50%{
+		color:pink;
+			
+		}
+		75%{
+		color:blue;
+		
+		
+		}
+		
+		to{
+		
+		
+		color:black;}
+	}
+
+@-webkit-keyframes animate
+{
+from {
+color:pink;
+}
+
+25% {
+color:green;
+}
+
+
+50% {
+color:blue;
+}
+
+75%{
+color:green;
+}
+
+100%{
+color:yellow;
+}
+
+
+}   
+
+@-moz-keyframes animate
+{
+from {
+color:pink;
+
+}
+25% {
+color:red;
+
+}
+50% {
+color:blue;
+
+}
+75%{
+color:black;
+}
+
+100%{
+color:orange;
+}
+
+
+}    
+
+
+
+@slittamento
+{
+	from {
+	top:50px; left:350px;
+	
+	
+	}
+ 25% {
+ 
+ top:100px; left:275px;
+ 
+ }	
+	
+	50% {
+	top:125px; left:350px;
+	
+	
+	
+	}
+	
+	
+	75% {
+	top:150px; left:270px;
+	
+	
+	
+	}
+
+
+to{
+	
+	top:180px; left:390px;
+	
+	
+	
+	
+}
+}
+
+@-webkit-keyframes   slittamento{
+	from {
+	top:50px; left:250px;
+	
+	
+	}
+ 25% {
+ 
+ top:150px; left:300px;
+ 
+ }	
+	
+	50% {
+	top:200px; left:300px;
+	
+	
+	
+	}
+	
+	
+	75% {
+	top:250px; left:350px;
+	
+	
+	
+	}
+
+
+to{
+	
+	top:300px; left:350px;
+	
+	
+	
+	
+}
+} 
+
+ 
+@-moz-keyframes   slittamento{
+	from {
+	top:50px;  left:250px;
+	
+	}
+	
+ 25% {
+ 
+ top:150px; left:300px;
+ 
+ }	
+	
+50% {
+	top:200px; left:350px;
+	
+		
+	}
+	
+75% {
+	top:250px; left:400px;
+	
+		}
+
+
+to{
+	
+	top:300px; left:450px;
+
+}
+}
+
+@-ms-keyframes   slittamento{
+	from {
+	top:50px; left:250px;
+	
+		}
+ 25% {
+ 
+ top:150px; left:260px;
+ 
+ }	
+	
+	50% {
+	top:200px; left:270px;
+	
+	
+	
+	}
+	
+	
+	75% {
+	top:250px; left:280px;
+	
+	
+	
+	}
+
+
+to{
+	
+	top:300px; left:290px;
+	
+	
+	
+	
+}
+}
+
